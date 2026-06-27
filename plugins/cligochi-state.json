@@ -1,0 +1,37 @@
+{
+  "petId": "cat-glitch",
+  "name": "Glitch",
+  "stats": {
+    "hunger": 22,
+    "happiness": 0,
+    "health": 11
+  },
+  "special": {
+    "strength": 10,
+    "perception": 8,
+    "endurance": 10,
+    "charisma": 4,
+    "intelligence": 8,
+    "agility": 4,
+    "luck": 7
+  },
+  "traits": [
+    "cautious"
+  ],
+  "counters": {
+    "commits": 2,
+    "fileSaves": 253,
+    "testRuns": 108,
+    "testPasses": 50,
+    "testFails": 58,
+    "errors": 95,
+    "sessions": 323,
+    "nightSessions": 0,
+    "forcePushes": 0,
+    "languages": [],
+    "rapidCommits": 0,
+    "totalSessionMinutes": 0
+  },
+  "lastActive": 1778379509513,
+  "createdAt": 1777987255355
+}

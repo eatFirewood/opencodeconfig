@@ -1,0 +1,182 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
+  "auto_update": false,
+  "runtime_fallback": false,
+  "agents": {
+    "sisyphus": {
+      "model": "openai/gpt-5.5",
+      "variant": "high",
+      "reasoningEffort": "high",
+      "fallback_models": [
+        "openai/gpt-5.4-mini-fast"
+      ]
+    },
+    "hephaestus": {
+      "model": "openai/gpt-5.5",
+      "variant": "medium",
+      "reasoningEffort": "medium",
+      "fallback_models": [
+        "openai/gpt-5.4-mini-fast"
+      ]
+    },
+    "oracle": {
+      "model": "openai/gpt-5.5",
+      "variant": "high",
+      "reasoningEffort": "high",
+      "fallback_models": [
+        "openai/gpt-5.4-mini-fast"
+      ]
+    },
+    "librarian": {
+      "model": "openai/gpt-5.4-mini-fast",
+      "variant": "medium",
+      "reasoningEffort": "medium",
+      "fallback_models": [
+        "openai/gpt-5.4-mini-fast"
+      ]
+    },
+    "explore": {
+      "model": "openai/gpt-5.4-mini-fast",
+      "variant": "medium",
+      "reasoningEffort": "medium",
+      "fallback_models": [
+        "openai/gpt-5.4-mini-fast"
+      ]
+    },
+    "multimodal-looker": {
+      "model": "openai/gpt-5.4-mini-fast",
+      "variant": "medium",
+      "reasoningEffort": "medium",
+      "fallback_models": [
+        "openai/gpt-5.4-mini-fast"
+      ]
+    },
+    "prometheus": {
+      "model": "openai/gpt-5.5",
+      "variant": "high",
+      "reasoningEffort": "high",
+      "fallback_models": [
+        "openai/gpt-5.4-mini-fast"
+      ]
+    },
+    "metis": {
+      "model": "openai/gpt-5.5",
+      "variant": "high",
+      "reasoningEffort": "high",
+      "fallback_models": [
+        "openai/gpt-5.4-mini-fast"
+      ]
+    },
+    "momus": {
+      "model": "openai/gpt-5.5",
+      "variant": "xhigh",
+      "reasoningEffort": "high",
+      "fallback_models": [
+        "openai/gpt-5.4-mini-fast"
+      ]
+    },
+    "atlas": {
+      "model": "openai/gpt-5.5",
+      "variant": "medium",
+      "reasoningEffort": "medium",
+      "fallback_models": [
+        "openai/gpt-5.4-mini-fast"
+      ]
+    },
+    "sisyphus-junior": {
+      "model": "openai/gpt-5.5",
+      "variant": "medium",
+      "reasoningEffort": "medium",
+      "fallback_models": [
+        "openai/gpt-5.4-mini-fast"
+      ]
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "openai/gpt-5.5",
+      "variant": "high",
+      "reasoningEffort": "high"
+    },
+    "ultrabrain": {
+      "model": "openai/gpt-5.5",
+      "variant": "xhigh",
+      "reasoningEffort": "high"
+    },
+    "deep": {
+      "model": "openai/gpt-5.5",
+      "variant": "medium",
+      "reasoningEffort": "high"
+    },
+    "artistry": {
+      "model": "openai/gpt-5.5",
+      "variant": "xhigh",
+      "reasoningEffort": "high"
+    },
+    "tiny-edit": {
+      "model": "openai/gpt-5.4-mini",
+      "variant": "medium",
+      "reasoningEffort": "low"
+    },
+    "major-refactor": {
+      "model": "openai/gpt-5.5",
+      "variant": "high",
+      "reasoningEffort": "high"
+    },
+    "research-fast": {
+      "model": "openai/gpt-5.4-mini-fast",
+      "variant": "medium",
+      "reasoningEffort": "low"
+    },
+    "comment-edit": {
+      "model": "openai/gpt-5.4-mini-fast",
+      "variant": "medium",
+      "reasoningEffort": "low"
+    },
+    "quick": {
+      "model": "openai/gpt-5.4-mini",
+      "variant": "medium",
+      "reasoningEffort": "low"
+    },
+    "unspecified-low": {
+      "model": "openai/gpt-5.4-mini",
+      "variant": "medium",
+      "reasoningEffort": "medium"
+    },
+    "unspecified-high": {
+      "model": "openai/gpt-5.5",
+      "variant": "high",
+      "reasoningEffort": "high"
+    },
+    "writing": {
+      "model": "openai/gpt-5.5",
+      "variant": "medium",
+      "reasoningEffort": "medium"
+    }
+  },
+  "background_task": {
+    "providerConcurrency": {
+      "openai": 1
+    },
+    "modelConcurrency": {
+      "openai/gpt-5.5": 1,
+      "openai/gpt-5.4-mini-fast": 2,
+      "openai/gpt-5.4-mini": 2
+    }
+  },
+  "team_mode": {
+    "enabled": true,
+    "tmux_visualization": true,
+    "max_parallel_members": 4,
+    "max_members": 8,
+    "max_messages_per_run": 10000,
+    "max_wall_clock_minutes": 120,
+    "max_member_turns": 500,
+    "message_payload_max_bytes": 32768,
+    "recipient_unread_max_bytes": 262144,
+    "mailbox_poll_interval_ms": 3000
+  },
+  "disabled_providers": [
+    "deepseek"
+  ]
+}
